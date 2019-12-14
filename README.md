@@ -1,6 +1,7 @@
 node-red
 ========
 
+[![Build Status](https://travis-ci.org/EasyPi/docker-node-red.svg?branch=master)](https://travis-ci.org/EasyPi/docker-node-red)
 ![](https://badge.imagelayers.io/vimagick/node-red:latest.svg)
 
 [Node-RED][1] is a tool for wiring together hardware devices, APIs and online
