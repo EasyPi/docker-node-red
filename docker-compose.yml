@@ -1,5 +1,5 @@
 node-red:
-  image: vimagick/node-red
+  image: easypi/node-red
   ports:
     - "1880:1880"
   volumes:
