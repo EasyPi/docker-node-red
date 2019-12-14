@@ -1,0 +1,16 @@
+language: generic
+
+services:
+  - docker
+
+before_install:
+  - docker run --rm --privileged multiarch/qemu-user-static:register --reset
+
+script:
+  - docker build -t easypi/node-red -f Dockerfile .
+  - docker build -t easypi/node-red-arm -f arm/Dockerfile arm
+
+after_success:
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker push easypi/node-red
+  - docker push easypi/node-red-arm
