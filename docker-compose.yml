@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  node-red:
+    image: easypi/node-red
+    ports:
+      - "1880:1880"
+    volumes:
+      - ./data:/data
+      - /dev/input:/dev/input
+    privileged: true
+    restart: unless-stopped
