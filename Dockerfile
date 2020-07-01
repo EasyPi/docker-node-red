@@ -16,6 +16,7 @@ RUN set -xe \
         python3 \
         python3-dev \
     && ln -sf /usr/bin/python3 /usr/bin/python \
+    && python -m ensurepip \
     && pip3 install --no-cache-dir rpi.gpio \
     && npm install -g --unsafe-perm \
         node-red \
