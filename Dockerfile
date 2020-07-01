@@ -2,7 +2,7 @@
 # Dockerfile for node-red
 #
 
-FROM alpine:3.10
+FROM alpine:3.12
 MAINTAINER EasyPi Software Foundation
 
 RUN set -xe \
