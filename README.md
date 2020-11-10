@@ -22,7 +22,7 @@ services in new and interesting ways.
     └── settings.js
 ```
 
-> The `node-red` directory will be created after first running.
+> The `node-red/data` directory will be created after first running.
 
 ## docker-compose.yml
 
