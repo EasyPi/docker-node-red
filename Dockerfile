@@ -27,6 +27,7 @@ RUN set -xe \
         node-red-node-pi-gpio \
         node-red-node-sentiment \
         node-red-node-twitter \
+        node-red-node-ui-list \
     && mkdir -p /usr/share/doc/python-rpi.gpio \
     && apk del \
         build-base \
