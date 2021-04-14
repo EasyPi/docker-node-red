@@ -4,6 +4,11 @@ node-red
 [![](https://travis-ci.org/EasyPi/docker-node-red.svg?branch=master)](https://travis-ci.org/EasyPi/docker-node-red)
 [![](https://badge.imagelayers.io/easypi/node-red:latest.svg)](https://hub.docker.com/r/easypi/node-red)
 
+ARCH   | IMAGE                    | SIZE
+-------|--------------------------|--------
+amd64  | [easypi/node-red][2]     | 69.86 MB
+arm    | [easypi/node-red-arm][3] | 72.04 MB
+
 [Node-RED][1] is a tool for wiring together hardware devices, APIs and online
 services in new and interesting ways.
 
@@ -83,3 +88,5 @@ $ docker-compose restart
 > Install nodes from [node-red-nodes](https://github.com/node-red/node-red-nodes).
 
 [1]: http://nodered.org/
+[2]: https://hub.docker.com/r/easypi/node-red
+[3]: https://hub.docker.com/r/easypi/node-red-arm
