@@ -6,8 +6,8 @@ node-red
 
 ARCH   | IMAGE                    | SIZE
 -------|--------------------------|--------
-amd64  | [easypi/node-red][2]     | 69.86 MB
-arm    | [easypi/node-red-arm][3] | 72.04 MB
+amd64  | [easypi/node-red][2]     | 69.55 MB
+arm    | [easypi/node-red-arm][3] | 71.74 MB
 
 [Node-RED][1] is a tool for wiring together hardware devices, APIs and online
 services in new and interesting ways.
