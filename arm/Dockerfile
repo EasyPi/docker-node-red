@@ -2,7 +2,7 @@
 # Dockerfile for node-red-arm
 #
 
-FROM multiarch/alpine:armhf-v3.12
+FROM multiarch/alpine:armhf-v3.14
 MAINTAINER EasyPi Software Foundation
 
 RUN set -xe \
