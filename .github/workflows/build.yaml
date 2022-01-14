@@ -1,11 +1,12 @@
 name: Docker Build Images
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
-    paths:
-      - Dockerfile
+    paths-ignore:
+      - README.md
 
 jobs:
   release:
@@ -31,6 +32,6 @@ jobs:
       - uses: slackapi/slack-github-action@v1.16.0
         with:
           channel-id: github
-          slack-message: 'docker build ok'
+          slack-message: 'docker build "easypi/node-red" ok'
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
