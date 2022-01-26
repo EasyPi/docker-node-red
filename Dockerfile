@@ -5,6 +5,10 @@
 FROM alpine:3.12
 MAINTAINER EasyPi Software Foundation
 
+ARG NODERED_VERSION
+ARG NODERED_ADMIN_VERSION
+ARG NODERED_DASHBOARD_VERSION
+
 RUN set -xe \
     && apk add --no-cache \
         bash \
@@ -19,9 +23,9 @@ RUN set -xe \
     && python -m ensurepip \
     && pip3 install --no-cache-dir rpi.gpio \
     && npm install -g --unsafe-perm \
-        node-red \
-        node-red-admin \
-        node-red-dashboard \
+        node-red@${NODERED_VERSION} \
+        node-red-admin@${NODERED_ADMIN_VERSION} \
+        node-red-dashboard@${NODERED_DASHBOARD_VERSION} \
         node-red-node-email \
         node-red-node-feedparser \
         node-red-node-pi-gpio \
