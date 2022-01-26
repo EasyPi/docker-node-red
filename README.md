@@ -1,7 +1,9 @@
 node-red
 ========
 
-![](https://github.com/easypi/docker-node-red/actions/workflows/build.yaml/badge.svg)
+[![](https://github.com/easypi/docker-node-red/actions/workflows/build.yaml/badge.svg)](https://github.com/EasyPi/docker-node-red)
+
+[![](http://dockeri.co/image/easypi/node-red)](https://hub.docker.com/r/easypi/node-red)
 
 ARCH     | IMAGE                    | SIZE
 ---------|--------------------------|--------
