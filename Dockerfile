@@ -15,6 +15,7 @@ RUN set -xe \
         build-base \
         ca-certificates \
         curl \
+        dumb-init \
         nodejs \
         nodejs-npm \
         python3 \
@@ -44,4 +45,5 @@ VOLUME /data
 
 EXPOSE 1880
 
+ENTRYPOINT ["dumb-init", "--"]
 CMD ["node-red", "--userDir", "/data", "--flowFile", "flows.json"]
