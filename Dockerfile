@@ -15,11 +15,13 @@ RUN set -xe \
         ca-certificates \
         curl \
         dumb-init \
+        gcompat \
         nodejs \
         nodejs-npm \
         python3 \
         python3-dev \
     && ln -sf /usr/bin/python3 /usr/bin/python \
+    && ln -sf /lib /lib64 \
     && python -m ensurepip \
     && pip3 install --no-cache-dir rpi.gpio \
     && npm install -g --unsafe-perm \
