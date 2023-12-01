@@ -10,25 +10,25 @@ on:
 
 env:
   IMAGE_NAME: 'easypi/node-red'
-  NODERED_VERSION: '3.1.0'
+  NODERED_VERSION: '3.1.1'
   NODERED_DASHBOARD_VERSION: '3.5.0'
 
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - uses: docker/setup-qemu-action@v1
+      - uses: docker/setup-qemu-action@v3
 
-      - uses: docker/setup-buildx-action@v1
+      - uses: docker/setup-buildx-action@v3
 
       - uses: docker/login-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - uses: docker/build-push-action@v2
+      - uses: docker/build-push-action@v5
         with:
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           build-args: |
@@ -40,7 +40,7 @@ jobs:
           push: true
 
       - if: ${{ always() }}
-        uses: slackapi/slack-github-action@v1.16.0
+        uses: slackapi/slack-github-action@v1.24.0
         with:
           channel-id: github
           payload: |
