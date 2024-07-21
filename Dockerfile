@@ -2,7 +2,7 @@
 # Dockerfile for node-red
 #
 
-FROM alpine:3.12
+FROM alpine:3
 MAINTAINER EasyPi Software Foundation
 
 ARG NODERED_VERSION
@@ -17,11 +17,12 @@ RUN set -xe \
         dumb-init \
         gcompat \
         nodejs \
-        nodejs-npm \
+        npm \
         python3 \
         python3-dev \
     && ln -sf /usr/bin/python3 /usr/bin/python \
     && ln -sf /lib /lib64 \
+    && rm /usr/lib/python3.11/EXTERNALLY-MANAGED \
     && python -m ensurepip \
     && pip3 install --no-cache-dir rpi.gpio \
     && npm install -g --unsafe-perm \
