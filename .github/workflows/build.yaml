@@ -10,7 +10,7 @@ on:
 
 env:
   IMAGE_NAME: 'easypi/node-red'
-  NODERED_VERSION: '4.1.0'
+  NODERED_VERSION: '4.1.1'
   NODERED_DASHBOARD_VERSION: '3.6.3'
 
 jobs:

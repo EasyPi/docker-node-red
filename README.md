@@ -31,7 +31,6 @@ services in new and interesting ways.
 ## docker-compose.yml
 
 ```yaml
-version: "3.8"
 services:
   node-red:
     image: easypi/node-red
