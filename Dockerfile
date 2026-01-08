@@ -2,7 +2,7 @@
 # Dockerfile for node-red
 #
 
-FROM alpine:3.20
+FROM alpine:3.23
 MAINTAINER EasyPi Software Foundation
 
 ARG NODERED_VERSION
