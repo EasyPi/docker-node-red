@@ -27,7 +27,6 @@ RUN set -xe \
     && pip3 install --no-cache-dir rpi.gpio \
     && npm install -g --unsafe-perm \
         node-red@${NODERED_VERSION} \
-        node-red-dashboard@${NODERED_DASHBOARD_VERSION} \
         node-red-node-email \
         node-red-node-feedparser \
         node-red-node-pi-gpio \
@@ -35,6 +34,7 @@ RUN set -xe \
         node-red-node-twitter \
         node-red-node-ui-list \
         node-red-node-ui-table \
+        @flowfuse/node-red-dashboard@${NODERED_DASHBOARD_VERSION} \
     && mkdir -p /usr/share/doc/python-rpi.gpio \
     && apk del \
         build-base \
