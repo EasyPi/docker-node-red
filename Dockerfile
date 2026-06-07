@@ -27,6 +27,7 @@ RUN set -xe \
     && pip3 install --no-cache-dir rpi.gpio \
     && npm install -g --unsafe-perm \
         node-red@${NODERED_VERSION} \
+        node-red-node-base64 \
         node-red-node-email \
         node-red-node-feedparser \
         node-red-node-pi-gpio \
