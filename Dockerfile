@@ -21,8 +21,8 @@ RUN set -xe \
         python3 \
         python3-dev \
     && ln -sf /usr/bin/python3 /usr/bin/python \
-    && ln -sf /lib /lib64 \
-    && rm -vf /usr/lib/python3.14/EXTERNALLY-MANAGED \
+    && ([[ -d /lib64 ]] || ln -sf /lib /lib64) \
+    && rm -vf /usr/lib/python3.*/EXTERNALLY-MANAGED \
     && python -m ensurepip \
     && pip3 install --no-cache-dir rpi.gpio \
     && npm install -g --unsafe-perm \
