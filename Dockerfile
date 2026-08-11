@@ -14,6 +14,8 @@ RUN set -xe \
         build-base \
         ca-certificates \
         curl \
+        dropbear-scp \
+        dropbear-ssh \
         dumb-init \
         gcompat \
         nodejs \
