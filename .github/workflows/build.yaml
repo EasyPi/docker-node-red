@@ -22,6 +22,6 @@ jobs:
       - name: Docker Build and Notify
         uses: vimagick/dockerfiles/.github/actions/docker-build-notify@master
         with:
-          image_name: 'easypi/shadowsocks-rust'
+          image_name: 'easypi/node-red'
           version_arg: 'NODERED_VERSION'
           version_value: '5.0.5'
