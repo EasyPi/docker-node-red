@@ -6,7 +6,7 @@ FROM alpine:3.24
 MAINTAINER EasyPi Software Foundation
 
 ARG NODERED_VERSION
-ARG NODERED_DASHBOARD_VERSION=1.31.0
+ARG NODERED_DASHBOARD_VERSION
 
 RUN set -xe \
     && apk add --no-cache \
