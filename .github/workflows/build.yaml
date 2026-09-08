@@ -24,6 +24,6 @@ jobs:
         with:
           image_name: 'easypi/node-red'
           version_arg: 'NODERED_VERSION'
-          version_value: '5.0.5'
+          version_value: '5.0.7'
           other_build_args: |
             NODERED_DASHBOARD_VERSION=1.31.0
