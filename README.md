@@ -1,9 +1,9 @@
 node-red
 ========
 
-[![](https://github.com/easypi/docker-node-red/actions/workflows/build.yaml/badge.svg)](https://github.com/EasyPi/docker-node-red)
-
-[![](http://dockeri.co/image/easypi/node-red)](https://hub.docker.com/r/easypi/node-red)
+[![Build](https://github.com/easypi/docker-node-red/actions/workflows/build.yaml/badge.svg)](https://github.com/EasyPi/docker-node-red)
+[![Stars](https://img.shields.io/docker/stars/easypi/urlwatch?label=docker-stars-node-red)](https://hub.docker.com/r/easypi/node-red)
+[![Latest](https://img.shields.io/github/release/node-red/node-red?label=latest)][1]
 
 ARCH     | IMAGE                    | SIZE
 ---------|--------------------------|--------
@@ -26,6 +26,7 @@ services in new and interesting ways.
     └── settings.js
 ```
 
+> [!NOTE]
 > The `node-red/data` directory will be created after first running.
 
 ## docker-compose.yml
