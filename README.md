@@ -1,14 +1,13 @@
 node-red
 ========
 
-[![Build](https://github.com/easypi/docker-node-red/actions/workflows/build.yaml/badge.svg)](https://github.com/EasyPi/docker-node-red)
-[![Stars](https://img.shields.io/docker/stars/easypi/urlwatch?label=docker-stars-node-red)](https://hub.docker.com/r/easypi/node-red)
+[![Build](https://img.shields.io/github/actions/workflow/status/EasyPi/docker-node-red/build.yaml)](https://github.com/EasyPi/docker-node-red/actions/workflows/build.yaml)
+[![Stars](https://img.shields.io/docker/stars/easypi/urlwatch)](https://hub.docker.com/r/easypi/node-red)
 [![Latest](https://img.shields.io/github/release/node-red/node-red?label=latest)][1]
 
-ARCH     | IMAGE                    | SIZE
----------|--------------------------|--------
-amd64    | [easypi/node-red][2]     | ~170 MB
-arm64    | [easypi/node-red][2]     | ~170 MB
+ARCH           | IMAGE                    | SIZE
+---------------|--------------------------|--------------------------
+amd64/arm64    | [easypi/node-red][2]     | ![Image Size](https://img.shields.io/docker/image-size/easypi/node-red/latest)
 
 [Node-RED][1] is a tool for wiring together hardware devices, APIs and online
 services in new and interesting ways.
