@@ -11,7 +11,8 @@ ARCH                       | IMAGE                    | SIZE
 [Node-RED][1] is a tool for wiring together hardware devices, APIs and online
 services in new and interesting ways.
 
-Current Version: [![Latest](https://img.shields.io/github/release/node-red/node-red?label=node-red&color=purple&logo=github&style=flat-square)][1] 
+Current Version: [![Latest](https://img.shields.io/github/release/node-red/node-red?label=node-red&color=purple&logo=github&style=flat-square)][1]
+[![Latest](https://img.shields.io/github/release/FlowFuse/node-red-dashboard?label=node-red-dashboard&color=purple&logo=github&style=flat-square)][5]
 
 ## directory tree
 
@@ -95,5 +96,6 @@ $ docker-compose restart
 [2]: https://hub.docker.com/r/easypi/node-red
 [3]: https://img.shields.io/docker/v/easypi/node-red/latest?label=easypi/node-red&logo=docker&style=flat-square
 [4]: https://img.shields.io/docker/image-size/easypi/node-red/latest?logo=docker&style=flat-square
+[5]: https://github.com/FlowFuse/node-red-dashboard
 [5]: https://img.shields.io/badge/linux-amd64+arm64-orange.svg?logo=linux&style=flat-square
 [6]: https://img.shields.io/badge/linux-arm64-orange.svg?logo=linux&style=flat-square
